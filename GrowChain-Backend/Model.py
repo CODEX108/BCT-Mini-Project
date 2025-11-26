@@ -10,7 +10,7 @@ CORS(app)
 # Constants
 IMAGE_FOLDER = "uploaded_images"  # Folder to save uploaded images
 JSON_FILE = "crop.json"
-API_KEY = "AIzaSyDptjvhpE4lYnD0ln5NbpZ74L8DvT9Kfp8"
+API_KEY = "your key"
 
 # Ensure the image folder exists
 os.makedirs(IMAGE_FOLDER, exist_ok=True)

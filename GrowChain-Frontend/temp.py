@@ -11,7 +11,7 @@ app = Flask(__name__)
 IMAGE_URL = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmcINYWj31IYnFDOA4ookR9Unb-yWYMs5XrA&s"
 IMAGE_FILE = "downloaded_image.jpg"
 JSON_FILE = "crop.json"
-API_KEY = "AIzaSyDptjvhpE4lYnD0ln5NbpZ74L8DvT9Kfp8"
+API_KEY = "your key"
 
 
 def download_image(url):
