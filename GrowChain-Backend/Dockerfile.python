@@ -2,9 +2,7 @@ FROM python:3.9-slim
 
 WORKDIR /app
 
-COPY requirements.txt .
-# If requirements.txt doesn't exist, we'll install manually in the next step, 
-# but it's better practice to have one. 
+# requirements.txt doesn't exist, so we install manually.
 # Since I didn't see one in the file list, I will install directly.
 
 RUN pip install flask flask-cors g4f
