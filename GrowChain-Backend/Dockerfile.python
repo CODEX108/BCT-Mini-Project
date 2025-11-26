@@ -1,0 +1,19 @@
+FROM python:3.9-slim
+
+WORKDIR /app
+
+COPY requirements.txt .
+# If requirements.txt doesn't exist, we'll install manually in the next step, 
+# but it's better practice to have one. 
+# Since I didn't see one in the file list, I will install directly.
+
+RUN pip install flask flask-cors g4f
+
+COPY Model.py .
+COPY crop.json .
+# Create the uploaded_images directory
+RUN mkdir uploaded_images
+
+EXPOSE 5001
+
+CMD ["python", "Model.py"]
