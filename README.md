@@ -1,5 +1,3 @@
-# GrowChain - Decentralized Crop Recommendation System
-
 ## Docker Images
 Frontend: https://hub.docker.com/r/manjiric/growchain-frontend  
 Backend: https://hub.docker.com/r/manjiric/growchain-backend  
