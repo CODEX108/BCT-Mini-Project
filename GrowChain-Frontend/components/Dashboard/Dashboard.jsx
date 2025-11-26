@@ -12,7 +12,8 @@ import { getCookie } from "cookies-next";
 
 function Dashboard() {
   const [weatherData, setWeatherData] = useState();
-  const userData = JSON.parse(getCookie("userData"));
+  const userDataCookie = getCookie("userData");
+  const userData = userDataCookie ? JSON.parse(userDataCookie) : null;
   const [location, setLocation] = useState({ latitude: null, longitude: null });
   const { t } = useTranslation();
   const [averageHydration, setAverageHydration] = useState();

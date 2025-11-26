@@ -72,7 +72,19 @@ const RecommendationsCard = ({ crop }) => {
 
 const Recommendations = () => {
   const [cropsData,setCropsData] = useState();
-  const userData = JSON.parse(getCookie("userData"));
+  let userData = null;
+
+if (typeof window !== "undefined") {
+  const cookie = getCookie("userData");
+  if (cookie) {
+    try {
+      userData = JSON.parse(cookie);
+    } catch (e) {
+      userData = null;
+    }
+  }
+}
+
   useEffect(() => {
     const getRecommendedData = async () => {
       try {
