@@ -8,3 +8,6 @@ docker pull manjiric/growchain-frontend:latest
 docker pull manjiric/growchain-backend:latest
 docker pull manjiric/growchain-python:latest
 docker-compose up
+
+## Mediun Article
+https://medium.com/@miraj.lakeshri23/growchain-how-we-built-a-blockchain-platform-to-revolutionize-sustainable-agriculture-9095c4e8f9f6 
